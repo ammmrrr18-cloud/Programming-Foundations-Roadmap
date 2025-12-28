@@ -35,5 +35,5 @@ By completing this level, I have moved from "thinking" to "executing." I am now 
 This level concludes with a **Professional Certificate in Introduction to Programming with C++ – Level 1**, verifying my readiness for advanced algorithms and systems programming.
 
 ---
-**📂 Next Step:** ➡️ [Level 04: Algorithms & Problem-Solving (Solutions)](../04-Algorithms-Problem-Solving-L1-Solutions)
+**📂 Next Step:** ➡️ [Level 04: Algorithms & Problem-Solving (Solutions)](../04%20-%20Algorithms%20%26%20Problem-Solving%20%E2%80%93%20Level%201%20(Solutions))
 *📌 "Thinking is the soul of programming; C++ is the body."*
