@@ -33,5 +33,5 @@ By completing this level, I developed a **Problem Solver’s Mindset**. I can no
 This level concludes with a **Professional Certificate of Completion**, verifying my readiness to apply algorithmic thinking to real-world coding.
 
 ---
-**📂 Next Step:** ➡️ [Level 03: C++ Programming – Level 1](../03-Introduction-to-Programming-with-C-plus-plus-Level-1)
+**📂 Next Step:** ➡️ [Level 03: Introduction to Programming with C++ – Level 1](../03%20-%20Introduction%20to%20Programming%20with%20C%2B%2B%20%E2%80%93%20Level%201)
 *📌 "Great programmers are great thinkers first."*
