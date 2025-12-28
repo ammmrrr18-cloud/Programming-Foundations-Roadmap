@@ -17,7 +17,7 @@ In this level, the focus shifted from just "knowing" to **"doing"**. I learned t
 
 ### 3️⃣ Practical Projects & Experience
 * **Project 1: Rock-Paper-Scissors Game**
-  * A full-featured game that integrates **20+ programming concepts** including Enums, Structs, and AI logic.
+  * A full-featured game that integrates **20+ programming concepts** including Enums, Structs, and **Randomization Logic**.
 * **Project 2: Math Quiz (Bonus Project)**
   * A logic-driven application focused on algorithmic thinking, random number generation, and score management.
 * **Architecture:** Both projects were built using **Divide & Conquer** and **Clean Code** principles to ensure scalability and readability.
