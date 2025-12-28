@@ -27,5 +27,5 @@
 I emerged from this level with a true **"Programmer's Mindset."** I now understand why programming languages work the way they do, how code interacts with hardware, and how to think logically before writing any code.
 
 ---
-**📂 Next Step:** ➡️ [Level 2: Algorithms & Problem Solving](./02-Algorithms-L1)
+**📂 Next Step:** ➡️ [Level 2: Algorithms & Problem Solving](../02-Algorithms-Problem-Solving-L1)
 *📌 "Strong programming starts with strong foundations."*
