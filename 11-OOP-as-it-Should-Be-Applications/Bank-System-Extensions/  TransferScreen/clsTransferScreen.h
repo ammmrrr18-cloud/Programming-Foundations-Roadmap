@@ -3,12 +3,16 @@
 #include"clsBankClient.h"
 #include "clsInputValidate.h"
 
+// My Solution
+
 class clsTransferScreen :protected clsScreen
 {
 
-	static void _PrintClient(clsBankClient Client)
+	static void _PrintClient(clsBankClient Client,string Message= "\nClient Card:")
 	{
-		cout << "\nClient Card:";
+		
+		cout <<"\n"<< Message;
+
 		cout << "\n___________________\n";
 		cout << "\nFull Name   : " << Client.FullName();
 		cout << "\nAcc. Number : " << Client.AccountNumber();
@@ -33,6 +37,19 @@ class clsTransferScreen :protected clsScreen
 	  return Amount;
 	}
 
+	static string _ReadAccountNumber(string Message)
+	{
+		string AccountNumber;
+		cout << Message << endl;
+		
+		AccountNumber = clsInputValidate::ReadString();
+		while (!clsBankClient::IsClientExist(AccountNumber))
+		{
+			cout << "\nAccount number is not found, choose another one: ";
+			AccountNumber = clsInputValidate::ReadString();
+		}
+		return AccountNumber;
+	}
 
 
 public:
@@ -42,35 +59,20 @@ public:
 	{
 		_DrawScreenHeader("\nTransfer Screen");
 
-		string AccountNumber1 = "";
 
-		cout << "\nPlease enter account number to Transfrom from:";
-		cin >> AccountNumber1;
-		while (!clsBankClient::IsClientExist(AccountNumber1))
+		clsBankClient SourceClient = clsBankClient::Find(_ReadAccountNumber("\nPlease Enter Account Number to Transfer From: "));
+		_PrintClient(SourceClient,"Source Client Card");
+
+
+		clsBankClient DestinationClient = clsBankClient::Find(_ReadAccountNumber("\nPlease enter account number to Transfrom to:"));
+		
+		while (SourceClient.AccountNumber() == DestinationClient.AccountNumber())
 		{
-			cout << "\nAccount Number [" << AccountNumber1 << "] is Not exist\n";
-			cout << "Enter another one:";
-			cin >> AccountNumber1;
+			cout << "\nError: Destination account cannot be the same as the source account.\n";
+			DestinationClient = clsBankClient::Find(_ReadAccountNumber("Please enter a different account number to transfer to: "));
 		}
 
-		clsBankClient SourceClient = clsBankClient::Find(AccountNumber1);
-		_PrintClient(SourceClient);
-
-
-
-		string AccountNumber2 = "";
-
-		cout << "\nPlease enter account number to Transfrom to:";
-		cin >> AccountNumber2;
-		while (!clsBankClient::IsClientExist(AccountNumber2))
-		{
-			cout << "\nAccount Number [" << AccountNumber2 << "] is Not exist\n";
-			cout << "Enter another one:";
-			cin >> AccountNumber2;
-		}
-
-		clsBankClient DestinationClient = clsBankClient::Find(AccountNumber2);
-		_PrintClient(DestinationClient);
+		_PrintClient(DestinationClient, "Destination Client Card");
 
 
 		double Amount = _ReadAmount(SourceClient);
@@ -85,13 +87,13 @@ public:
 			if (SourceClient.Transfer(Amount, DestinationClient))
 			{
 				cout << "\nTransfer done successfully\n";
-
-				_PrintClient(SourceClient);
-				_PrintClient(DestinationClient);
+				
+		_PrintClient(SourceClient);
+		_PrintClient(DestinationClient);
 			}
 			else
 			{
-				cout << "\nTransfer Faild\n";
+				cout << "\nTransfer Faild because amount is greater than Account Balance\n";
 			}
 
 
