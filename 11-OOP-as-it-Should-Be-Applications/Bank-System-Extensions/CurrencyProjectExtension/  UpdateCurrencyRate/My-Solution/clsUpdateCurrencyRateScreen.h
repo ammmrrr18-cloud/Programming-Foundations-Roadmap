@@ -4,6 +4,9 @@
 #include "clsCurrency.h"
 
 
+
+// Is Better Soultion
+
 class clsUpdateCurrencyRateScreen:protected clsScreen
 {
 private:
