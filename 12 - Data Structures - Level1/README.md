@@ -1,52 +1,52 @@
-# 12 - تراكيب البيانات - المستوى الأول (Data Structures - Level 1) 🚀
+# 12 - Data Structures - Level 1 🚀
 
-مرحباً بكم في المجلد الثاني عشر من رحلتي البرمجية. في هذه المحطة، ركزت بشكل أساسي على **بناء الوعي الهندسي** وفهم كيفية تنظيم البيانات خلف الكواليس، وهو المستوى الذي يسبق التعمق في البرمجة المتقدمة.
+Welcome to the twelfth volume of my programming journey. In this stage, I focused primarily on **building engineering awareness** and understanding how data is organized behind the scenes—a crucial step before diving into advanced programming.
 
-### 🗝️ عن رحلتي في هذا المستوى
-هذا المستوى كان رحلة **نظرية ومعرفية** بامتياز. الهدف منه لم يكن كتابة أسطر برمجية كثيرة، بل "الفهم العميق" لسبب وجود كل هيكل بيانات ومتى نستخدمه. ركزت هنا على تصحيح المفهوم الشائع وتعلم الأساسيات الصح (Basics) قبل القفز للمواضيع المعقدة، لضمان بناء أساس منطقي سليم.
+### 🗝️ About My Journey in This Level
+This level was a **theoretical and conceptual** journey par excellence. The goal was not to write extensive lines of code, but rather to gain a "deep understanding" of why each data structure exists and when to use it. I focused on correcting common misconceptions and learning the right foundations before jumping into complex topics, ensuring a solid logical base.
 
-### 🎯 المفاهيم والمعارف الشاملة التي اكتسبتها:
-بإتمامي لهذا المستوى، أصبحت بفضل الله متمكناً من فهم وتطبيق المواضيع التالية:
+### 🎯 Comprehensive Concepts & Knowledge Acquired:
+By completing this level, I have mastered the understanding and application of the following topics:
 
-* **مفاهيم التأسيس (Foundations):**
-    * استيعاب ماهية تراكيب البيانات وأهميتها الجوهرية في بناء أي برنامج.
-    * القدرة على التمييز الدقيق بين تراكيب البيانات (Data Structures) وقواعد البيانات (Databases).
-    * تصنيف تراكيب البيانات ومعرفة المعايير العلمية لاختيار الهيكل المناسب لكل مشكلة.
+* **Foundational Concepts:**
+    * Understanding the nature of data structures and their fundamental importance in building any software.
+    * The ability to strictly distinguish between Data Structures and Databases.
+    * Classifying data structures and knowing the scientific criteria for choosing the right one for any problem.
 
-* **تحليل الأداء (Big O Notation):**
-    * الفهم العميق لتعقيد الوقت والمساحة (Time & Space Complexity).
-    * مقارنة الأداء بين الحلول البرمجية المختلفة باستخدام لغة الـ Big O.
-    * فهم كيفية تأثير حجم البيانات على سرعة التنفيذ استناداً إلى الهيكل المستخدم.
+* **Performance Analysis (Big O Notation):**
+    * Deep understanding of Time and Space Complexity.
+    * Comparing performance between different software solutions using Big O notation.
+    * Understanding how data size affects execution speed based on the structure used.
 
-* **هياكل البيانات الخطية والثنائية (Linear & Binary Structures):**
-    * التعامل الاحترافي والواثق مع المصفوفات (Arrays) والجداول (Matrices).
-    * فهم تراكيب البيانات الثنائية (Binary Data Structures) من خلال أمثلة واقعية.
+* **Linear & Binary Data Structures:**
+    * Professional and confident handling of Arrays and Matrices.
+    * Understanding Binary Data Structures through real-world examples.
 
-* **القوائم والوصول المقيد (Lists, Stacks & Queues):**
-    * التمكن من منطق عمل القوائم المرتبطة بكافة أنواعها: **Singly, Doubly, and Circular Linked Lists**.
-    * الاستخدام الصحيح والمنطقي للمكدس (Stacks) والطابور (Queues) وفهم الفرق بين (LIFO) و (FIFO).
+* **Lists & Restricted Access Structures (Stacks & Queues):**
+    * Mastery of the logic behind Singly, Doubly, and Circular Linked Lists.
+    * Correct and logical use of Stacks and Queues, understanding (LIFO) and (FIFO) principles.
 
-* **مفاهيم الـ STL والأنواع المتقدمة (Introductory Level):**
-    * فهم أساسيات الـ Vectors وعلاقتها بمكتبة القوالب القياسية (STL).
-    * استيعاب مفهوم الأنواع التجريدية للبيانات (**Abstract Data Types - ADT**).
-    * أخذ نظرة تمهيدية عن الـ **Maps** والـ **Unions** وكيفية عملهم.
+* **STL Concepts & Advanced Types (Introductory Level):**
+    * Understanding the basics of Vectors and their relationship with the Standard Template Library (STL).
+    * Grasping the concept of Abstract Data Types (ADT).
+    * An introductory look at Maps and Unions and how they function.
 
-### 🏗️ كيف تم تناول المحتوى في هذا المستوى؟
-بما أن هذا المستوى **تأسيسي ومعرفي**، فقد كان الاعتماد على:
-1. **الشرح النظري المفصل:** لفهم "لماذا" نستخدم كل أداة قبل "كيف".
-2. **تطبيقات برمجية خفيفة:** تمارين بسيطة ومباشرة على كل درس غرضها فقط توضيح وتثبيت المفهوم النظري المشروح.
-3. **التركيز على الوضوح والجاهزية:** التحضير النفسي والتقني للانتقال لمستويات تراكيب البيانات المتقدمة والخوارزميات المعقدة لاحقاً.
-
----
-
-### 🎓 شهادة الإتمام
-هذه الشهادة توثق الجاهزية المعرفية والمنطقية للانتقال لمستويات تراكيب البيانات المتقدمة:
-[مشاهدة شهادة إتمام تراكيب البيانات - المستوى الأول](https://github.com/ammmrrr18-cloud/Programming-Foundations-Roadmap/blob/main/12%20-%20Data%20Structures%20-%20Level1/certificate-of-completion-for-12-data-structures-level1.pdf)
+### 🏗️ How the Content Was Approached:
+Since this level is **foundational and conceptual**, the focus was on:
+1. **Detailed Theoretical Explanation:** Understanding "Why" we use each tool before "How."
+2. **Light Programming Applications:** Simple and direct exercises for each lesson, aimed solely at clarifying and reinforcing the theoretical concepts.
+3. **Focus on Clarity and Readiness:** Psychological and technical preparation for moving into advanced data structures and complex algorithms later.
 
 ---
 
-### 📂 محتوى المجلد
-يحتوي هذا المجلد على التوثيق النظري للمفاهيم التي تمت دراستها، بالإضافة إلى الأكواد البسيطة التي تم كتابتها كتطبيق مباشر لشرح الدروس.
+### 🎓 Certificate of Completion
+This certificate documents my conceptual and logical readiness to transition to advanced data structure levels:
+[View Certificate of Completion for Data Structures – Level 1](https://github.com/ammmrrr18-cloud/Programming-Foundations-Roadmap/blob/main/12%20-%20Data%20Structures%20-%20Level1/certificate-of-completion-for-12-data-structures-level1.pdf)
 
 ---
-*"الهدف هنا هو الوضوح والجاهزية، وليس التعقيد."* 🧠
+
+### 📂 Repository Content
+This folder contains the theoretical documentation of the concepts studied, along with the simple code snippets written as direct applications of the lessons.
+
+---
+*"The goal here is clarity and readiness, not complexity."* 🧠
