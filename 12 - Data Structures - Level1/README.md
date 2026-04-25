@@ -41,7 +41,7 @@
 
 ### 🎓 شهادة الإتمام
 هذه الشهادة توثق الجاهزية المعرفية والمنطقية للانتقال لمستويات تراكيب البيانات المتقدمة:
-[مشاهدة شهادة إتمام تراكيب البيانات - المستوى الأول](https://github.com/ammmrrr18-cloud/Programming-Foundations-Roadmap/blob/main/12%20-%20Data%20Structures%20-%20Level1/Certificate/Certificate.pdf)
+[مشاهدة شهادة إتمام تراكيب البيانات - المستوى الأول](https://github.com/ammmrrr18-cloud/Programming-Foundations-Roadmap/blob/main/12%20-%20Data%20Structures%20-%20Level1/certificate-of-completion-for-12-data-structures-level1.pdf)
 
 ---
 
