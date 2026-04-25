@@ -29,6 +29,7 @@
 | **09** | [Foundations - Level 2](https://github.com/ammmrrr18-cloud/Programming-Foundations-Roadmap/tree/main/09%20-%20Foundations%20Level%202) | 🏗️ In Progress |
 | **10** | [Object-Oriented Programming (Concepts)](https://github.com/ammmrrr18-cloud/Programming-Foundations-Roadmap/tree/main/10-OOP-as-it-Should-Be-Concepts) | ✅ Completed |
 | **11** | [Object-Oriented Programming (Applications)](https://github.com/ammmrrr18-cloud/Programming-Foundations-Roadmap/tree/main/11-OOP-as-it-Should-Be-Applications) | ✅ Completed |
+| **12** | [Data Structures - Level 1](https://github.com/ammmrrr18-cloud/Programming-Foundations-Roadmap/tree/main/12%20-%20Data%20Structures%20-%20Level1) | ✅ Completed |
 
 ---
 
