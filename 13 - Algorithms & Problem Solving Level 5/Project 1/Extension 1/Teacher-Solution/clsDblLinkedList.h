@@ -1,7 +1,5 @@
-//ProgrammingAdvices.com
-//Mohammed Abu-Hadhoud
-
 #pragma once
+
 #include <iostream>
 using namespace std;
 
@@ -9,6 +7,10 @@ using namespace std;
 template <class T>
 class clsDblLinkedList
 {
+
+protected:
+    int _Size = 0;
+
 public:
 
     class Node
@@ -20,14 +22,7 @@ public:
         Node* prev;
     };
 
-private:
-
-    Node* _head = NULL;
-    int _size = 0;
-
-public:
-
-
+    Node* head = NULL;
 
     void InsertAtBeginning(T value)
     {
@@ -41,35 +36,35 @@ public:
 
         Node* newNode = new Node();
         newNode->value = value;
-        newNode->next = _head;
+        newNode->next = head;
         newNode->prev = NULL;
 
-        if (_head != NULL) {
-            _head->prev = newNode;
+        if (head != NULL) {
+            head->prev = newNode;
         }
-        _head = newNode;
+        head = newNode;
+        _Size++;
 
-        _size++;
     }
 
     // Print the linked list
     void PrintList()
 
     {
-        Node* Current = _head;
+        Node* Current = head;
 
         while (Current != NULL) {
             cout << Current->value << " ";
             Current = Current->next;
         }
         cout << "\n";
-
+        delete Current;
 
     }
 
     Node* Find(T Value)
     {
-        Node* Current = _head;
+        Node* Current = head;
         while (Current != NULL) {
 
             if (Current->value == Value)
@@ -101,7 +96,8 @@ public:
             current->next->prev = newNode;
         }
         current->next = newNode;
-        _size++;
+        _Size++;
+
     }
 
     void InsertAtEnd(T value) {
@@ -117,19 +113,20 @@ public:
         Node* newNode = new Node();
         newNode->value = value;
         newNode->next = NULL;
-        if (_head == NULL) {
+        if (head == NULL) {
             newNode->prev = NULL;
-            _head = newNode;
+            head = newNode;
         }
         else {
-            Node* current = _head;
+            Node* current = head;
             while (current->next != NULL) {
                 current = current->next;
             }
             current->next = newNode;
             newNode->prev = current;
         }
-        _size++;
+        _Size++;
+
     }
 
     void DeleteNode(Node*& NodeToDelete) {
@@ -139,11 +136,11 @@ public:
             2-Set the previous pointer of the next node to the previous pointer of the current node.
             3-Delete the current node.
         */
-        if (_head == NULL || NodeToDelete == NULL) {
+        if (head == NULL || NodeToDelete == NULL) {
             return;
         }
-        if (_head == NodeToDelete) {
-            _head = NodeToDelete->next;
+        if (head == NodeToDelete) {
+            head = NodeToDelete->next;
         }
         if (NodeToDelete->next != NULL) {
             NodeToDelete->next->prev = NodeToDelete->prev;
@@ -152,8 +149,8 @@ public:
             NodeToDelete->prev->next = NodeToDelete->next;
         }
         delete NodeToDelete;
-        _size--;
 
+        _Size--;
     }
 
     void DeleteFirstNode()
@@ -166,16 +163,16 @@ public:
             4-Delete the temporary reference to the old head node.
         */
 
-        if (_head == NULL) {
+        if (head == NULL) {
             return;
         }
-        Node* temp = _head;
-        _head = _head->next;
-        if (_head != NULL) {
-            _head->prev = NULL;
+        Node* temp = head;
+        head = head->next;
+        if (head != NULL) {
+            head->prev = NULL;
         }
         delete temp;
-        _size--;
+        _Size--;
     }
 
     void DeleteLastNode() {
@@ -186,18 +183,17 @@ public:
             3-Delete the last node.
         */
 
-        if (_head == NULL) {
+        if (head == NULL) {
             return;
         }
 
-        if (_head->next == NULL) {
-            delete _head;
-            _head = NULL;
-            _size--;
+        if (head->next == NULL) {
+            delete head;
+            head = NULL;
             return;
         }
 
-        Node* current = _head;
+        Node* current = head;
         // we need to find the node before last node.
         while (current->next->next != NULL)
         {
@@ -207,13 +203,15 @@ public:
         Node* temp = current->next;
         current->next = NULL;
         delete temp;
-        _size--;
+        _Size--;
     }
 
     int Size()
     {
-        return _size;
+        return _Size;
     }
 
 
+
 };
+
