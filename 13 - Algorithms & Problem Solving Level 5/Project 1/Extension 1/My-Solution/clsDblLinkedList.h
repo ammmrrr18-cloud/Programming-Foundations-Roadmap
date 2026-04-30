@@ -42,6 +42,23 @@ public:
         return NumOfNodes;
     }
 
+// is better
+int Size()
+{
+    Node* Current = _head;
+    int NumOfNodes = 0;
+
+    while (Current != NULL)
+    {
+        NumOfNodes++;
+        Current = Current->next;
+    }
+   
+
+    return NumOfNodes;
+}
+
+
 
     void InsertAtBeginning(T value)
     {
