@@ -1,0 +1,258 @@
+//ProgrammingAdvices.com
+//Mohammed Abu-Hadhoud
+
+#pragma once
+#include <iostream>
+using namespace std;
+
+
+template <class T>
+class clsDblLinkedList
+{
+public:
+
+    class Node
+    {
+
+    public:
+        T value;
+        Node* next;
+        Node* prev;
+    };
+
+private:
+
+    Node* _head = NULL;
+    int _size = 0;
+
+public:
+
+
+
+    void InsertAtBeginning(T value)
+    {
+
+        /*
+            1-Create a new node with the desired value.
+            2-Set the next pointer of the new node to the current head of the list.
+            3-Set the previous pointer of the current head to the new node.
+            4-Set the new node as the new head of the list.
+        */
+
+        Node* newNode = new Node();
+        newNode->value = value;
+        newNode->next = _head;
+        newNode->prev = NULL;
+
+        if (_head != NULL) {
+            _head->prev = newNode;
+        }
+        _head = newNode;
+
+        _size++;
+    }
+
+    // Print the linked list
+    void PrintList()
+    {
+        Node* Current = _head;
+
+        while (Current != NULL) {
+            cout << Current->value << " ";
+            Current = Current->next;
+        }
+        cout << "\n";
+
+
+    }
+
+    Node* Find(T Value)
+    {
+        Node* Current = _head;
+        while (Current != NULL) {
+
+            if (Current->value == Value)
+                return Current;
+
+            Current = Current->next;
+        }
+
+        return NULL;
+
+    }
+
+    void InsertAfter(Node* current, T value) {
+
+
+        /*  1 - Create a new node with the desired value.
+             2-Set the next pointer of the new node to the next node of the current node.
+             3-Set the previous pointer of the new node to the current node.
+             4-Set the next pointer of the current node to the new node.
+             5-Set the previous pointer of the next node to the new node(if it exists).
+        */
+
+        Node* newNode = new Node();
+        newNode->value = value;
+        newNode->next = current->next;
+        newNode->prev = current;
+
+        if (current->next != NULL) {
+            current->next->prev = newNode;
+        }
+        current->next = newNode;
+        _size++;
+    }
+
+    void InsertAtEnd(T value) {
+
+        /*
+            1-Create a new node with the desired value.
+            2-Traverse the list to find the last node.
+            3-Set the next pointer of the last node to the new node.
+            4-Set the previous pointer of the new node to the last node.
+        */
+
+
+        Node* newNode = new Node();
+        newNode->value = value;
+        newNode->next = NULL;
+        if (_head == NULL) {
+            newNode->prev = NULL;
+            _head = newNode;
+        }
+        else {
+            Node* current = _head;
+            while (current->next != NULL) {
+                current = current->next;
+            }
+            current->next = newNode;
+            newNode->prev = current;
+        }
+        _size++;
+    }
+
+    void DeleteNode(Node*& NodeToDelete) {
+
+        /*
+            1-Set the next pointer of the previous node to the next pointer of the current node.
+            2-Set the previous pointer of the next node to the previous pointer of the current node.
+            3-Delete the current node.
+        */
+        if (_head == NULL || NodeToDelete == NULL) {
+            return;
+        }
+        if (_head == NodeToDelete) {
+            _head = NodeToDelete->next;
+        }
+        if (NodeToDelete->next != NULL) {
+            NodeToDelete->next->prev = NodeToDelete->prev;
+        }
+        if (NodeToDelete->prev != NULL) {
+            NodeToDelete->prev->next = NodeToDelete->next;
+        }
+        delete NodeToDelete;
+        _size--;
+
+    }
+
+    void DeleteFirstNode()
+    {
+
+        /*
+            1-Store a reference to the head node in a temporary variable.
+            2-Update the head pointer to point to the next node in the list.
+            3-Set the previous pointer of the new head to NULL.
+            4-Delete the temporary reference to the old head node.
+        */
+
+        if (_head == NULL) {
+            return;
+        }
+        Node* temp = _head;
+        _head = _head->next;
+        if (_head != NULL) {
+            _head->prev = NULL;
+        }
+        delete temp;
+        _size--;
+    }
+
+    void DeleteLastNode() {
+
+        /*
+            1-Traverse the list to find the last node.
+            2-Set the next pointer of the second-to-last node to NULL.
+            3-Delete the last node.
+        */
+
+        if (_head == NULL) {
+            return;
+        }
+
+        if (_head->next == NULL) {
+            delete _head;
+            _head = NULL;
+            _size--;
+            return;
+        }
+
+        Node* current = _head;
+        // we need to find the node before last node.
+        while (current->next->next != NULL)
+        {
+            current = current->next;
+        }
+
+        Node* temp = current->next;
+        current->next = NULL;
+        delete temp;
+        _size--;
+    }
+
+    int Size()
+    {
+        return _size;
+    }
+
+    bool IsEmpty()
+    {
+        return _size == 0;
+    }
+
+    void Clear()
+    {
+         
+        while (_size > 0)
+        {
+            DeleteFirstNode();
+        }
+    }
+
+    void SwapPointers(Node* &Current)
+    {
+        Node* Temp = Current->next;
+
+        Current->next = Current->prev;
+        Current->prev = Temp;
+    }
+
+    void Reverse()
+    {
+        Node* Current = _head;
+
+        while(Current!=NULL)
+        {
+            SwapPointers(Current);
+            if (Current->prev == NULL)
+            {
+                _head = Current;
+            }
+            Current = Current->prev;
+           
+        }
+
+    }
+
+
+  
+};
