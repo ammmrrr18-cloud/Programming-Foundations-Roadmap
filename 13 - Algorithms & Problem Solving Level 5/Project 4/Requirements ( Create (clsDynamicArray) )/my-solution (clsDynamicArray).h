@@ -6,7 +6,7 @@ using namespace std;
 template <class T>
 class clsDynamicArray
 {
-private:
+protected:
 	int _Size = 0;
 
 public:
