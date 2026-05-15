@@ -59,7 +59,7 @@ public:
 			return;
 		}
 
-		_Ticket._WaitingClients = _TotalTicketsCounter - 1;
+		_Ticket._WaitingClients = _OriginalQuClients.size();
 		_Ticket._serveTimeIn = _Ticket._WaitingClients * _serveTime;
 		_OriginalQuClients.push(_Ticket);
 		
@@ -74,7 +74,7 @@ public:
 		cout << "\t\t\t\t  " << left << setw(15) << "Prefix" << " = " << _prefix << endl;
 		cout << "\t\t\t\t  " << left << setw(15) << "Total Tickets" << " = " << _TotalTicketsCounter << endl;
 		cout << "\t\t\t\t  " << left << setw(15) << "Served Clients" << " = " << _ServedClients << endl;
-		cout << "\t\t\t\t  " << left << setw(15) << "Wating Clients" << " = " << _TotalTicketsCounter << endl;
+		cout << "\t\t\t\t  " << left << setw(15) << "Wating Clients" << " = " << _OriginalQuClients.size() << endl;
 
 		cout << "\t\t\t\t_________________________________\n";
 	}
@@ -148,7 +148,6 @@ public:
 		if (!_OriginalQuClients.empty()) 
 		{
 			_OriginalQuClients.pop();
-			_TotalTicketsCounter--;
 			_ServedClients++;
 		}
 		else
