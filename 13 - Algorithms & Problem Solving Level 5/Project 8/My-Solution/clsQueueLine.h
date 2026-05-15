@@ -15,12 +15,11 @@ private:
 	int _serveTime;
 
 	int _ServedClients = 0;
-	
+	int _TotalTicketsCounter = 0;
 	
 
 	struct stIssueTicket
 	{
-		int _ClientsQueueCounter = 0;
 		string _ID;
 		string _DateAndTime;
 		int _WaitingClients = 0;
@@ -28,11 +27,9 @@ private:
 	};
 
 
-	stIssueTicket _Ticket;
-	queue<stIssueTicket>_OriginalQuClients;
-	queue<stIssueTicket>_TempQuClients;
-	stack<stIssueTicket> _TempStackClients;
 
+	queue<stIssueTicket>_OriginalQuClients;
+	
 
 public:
 
@@ -46,10 +43,14 @@ public:
 
 	void IssueTicket()
 	{
-		_Ticket._ID = _prefix + to_string(++_Ticket._ClientsQueueCounter);
+		stIssueTicket _Ticket;
+
+		_TotalTicketsCounter++;
+
+		_Ticket._ID = _prefix + to_string(_TotalTicketsCounter);
 		_Ticket._DateAndTime = clsDate::GetSystemDateTimeString();
 
-		if (_Ticket._ClientsQueueCounter == 1)
+		if (_TotalTicketsCounter == 1)
 		{
 			_Ticket._WaitingClients = 0;
 			_Ticket._serveTimeIn = 0;
@@ -58,7 +59,7 @@ public:
 			return;
 		}
 
-		_Ticket._WaitingClients = _Ticket._ClientsQueueCounter - 1;
+		_Ticket._WaitingClients = _TotalTicketsCounter - 1;
 		_Ticket._serveTimeIn = _Ticket._WaitingClients * _serveTime;
 		_OriginalQuClients.push(_Ticket);
 		
@@ -80,6 +81,7 @@ public:
 
 	void PrintTicketsLineRTL()
 	{
+		queue<stIssueTicket>_TempQuClients;
 		_TempQuClients = _OriginalQuClients;
 		cout << "\n\n\t\t\tTickets:  ";
 
@@ -95,6 +97,9 @@ public:
 
 	void PrintTicketsLineLTR()
 	{
+		stack<stIssueTicket> _TempStackClients;
+		queue<stIssueTicket>_TempQuClients;
+
 		_TempQuClients = _OriginalQuClients;
 
 		while (!_TempQuClients.empty())
@@ -116,6 +121,8 @@ public:
 
 	void PrintAllTickets()
 	{
+		queue<stIssueTicket>_TempQuClients;
+
 		_TempQuClients = _OriginalQuClients;
 		cout << "\n\n\t\t\t\t\t--- Tickets ---\n";
 
