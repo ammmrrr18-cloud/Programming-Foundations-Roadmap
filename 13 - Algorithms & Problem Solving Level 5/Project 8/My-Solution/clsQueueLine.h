@@ -49,16 +49,6 @@ public:
 
 		_Ticket._ID = _prefix + to_string(_TotalTicketsCounter);
 		_Ticket._DateAndTime = clsDate::GetSystemDateTimeString();
-
-		if (_TotalTicketsCounter == 1)
-		{
-			_Ticket._WaitingClients = 0;
-			_Ticket._serveTimeIn = 0;
-			_OriginalQuClients.push(_Ticket);
-			
-			return;
-		}
-
 		_Ticket._WaitingClients = _OriginalQuClients.size();
 		_Ticket._serveTimeIn = _Ticket._WaitingClients * _serveTime;
 		_OriginalQuClients.push(_Ticket);
