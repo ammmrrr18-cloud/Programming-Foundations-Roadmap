@@ -10,6 +10,8 @@ This advanced educational system was developed under the supervision and guidanc
 
 The system is a Generic Template Class (`clsMyStack`) built in C++ that inherits directly from `clsMyQueue<T>`. By leveraging inheritance, this system transforms the linear behavior of the queue into a fully functional Stack. A key engineering highlight of this implementation is the explicit use of the `this->` pointer, which resolves template dependent name lookups cleanly and ensures high compatibility across modern C++ compilers.
 
+You can explore the full source code implementation directly through the [clsMyStack.h Solution Link](https://github.com/ammmrrr18-cloud/Programming-Foundations-Roadmap/blob/main/13%20-%20Algorithms%20%26%20Problem%20Solving%20Level%205/Project%203/Teacher-Solution/clsMyStack.h).
+
 ---
 
 ## 🛠️ System Features
@@ -55,7 +57,7 @@ Developing this system ensures a deep understanding of several advanced programm
 
 # بناء مكدس مخصص عن طريق التوريث وقوالب تعدد الأشكال
 
-هذا المشروع يمثل تطبيقاً هندسياً متقادماً لبناء هيكل بيانات المكدس (Stack) من الصفر، وهو يندرج تحت تصنيف **Functional Systems** حيث تم تصميمه عن طريق تطبيق مبدأ التوريث من نظام الطابور (Queue) المبني سابقاً، لاستعراض الكفاءة العالية في إعادة استخدام الكود، والتحكم في المؤشرات الديناميكية عبر الكلمة المفتاحية `this`.
+هذا المشروع يمثل تطبيقاً هندسياً متقدماً لبناء هيكل بيانات المكدس (Stack) من الصفر، وهو يندرج تحت تصنيف **Functional Systems** حيث تم تصميمه عن طريق تطبيق مبدأ التوريث من نظام الطابور (Queue) المبني سابقاً، لاستعراض الكفاءة العالية في إعادة استخدام الكود، والتحكم في المؤشرات الديناميكية عبر الكلمة المفتاحية `this`.
 
 تم تطوير هذا النظام التعليمي المتقدم تحت إشراف وتوجيه المهندس القدير: **محمد أبو هدهود** عبر [Programming Advices](https://programmingadvices.com/courses/enrolled/2001432).
 
@@ -64,6 +66,8 @@ Developing this system ensures a deep understanding of several advanced programm
 ## 📌 عن النظام (System Overview)
 
 النظام عبارة عن فئة قالب عامة (`clsMyStack`) تم بناؤها بلغة C++، حيث ترث مباشرة من كلاس الطابور `clsMyQueue<T>`. من خلال توظيف علاقة التوريث (Inheritance)، يقوم هذا النظام بتحويل السلوك الخطي للطابور ليحاكي تماماً وظائف المكدس بآلية LIFO (الداخل أخيراً يخرج أولاً). وتكمن الميزة الهندسية البارزة هنا في الاستخدام الصريح للمؤشر `this->` لحل مشكلة التعرف على أسماء الدوال الموروثة داخل القوالب وتأمين استقرار الكود أثناء الترجمة.
+
+يمكنك الاطلاع على الكود المصدري الكامل للنظام مباشرة من خلال [رابط الحل لـ clsMyStack.h](https://github.com/ammmrrr18-cloud/Programming-Foundations-Roadmap/blob/main/13%20-%20Algorithms%20%26%20Problem%20Solving%20Level%205/Project%203/Teacher-Solution/clsMyStack.h).
 
 ---
 
