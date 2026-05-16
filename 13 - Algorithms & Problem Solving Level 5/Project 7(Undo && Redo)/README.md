@@ -1,4 +1,3 @@
-
 # Smart String Management System with Advanced Undo and Redo Architecture
 
 This project represents a sophisticated engineering application to build a custom smart String management class from scratch. It falls under the category of **Functional Systems**, designed to manage textual data dynamically while tracking operational state history through dual-stack tracking mechanics, allowing infinite history rollback and forward re-execution capabilities.
@@ -41,7 +40,6 @@ Responsibilities within this **Functional System** demonstrate proper state mach
 
 Developing this system ensures a deep understanding of several advanced programming concepts:
 * **The Command and Memento Design Concepts:** Utilizing standard containers to store snapshots of data objects for precise state recovery workflows.
-* **Compiler-Specific Optimizations:** Mastering native compiler metadata tags like `__declspec` to expose properties in C++ that match modern programming language workflows.
 * **Dual-Stack Interactivity:** Mapping complex data flow transitions where two independent containers swap elements to manage chronological navigation.
 
 ---
@@ -97,7 +95,6 @@ Developing this system ensures a deep understanding of several advanced programm
 
 تطوير هذا النظام يضمن تحقيق فهم عميق لعدة مفاهيم برمجية متقدمة:
 * **تطبيقات أنماط التصميم (Memento Design Pattern):** فهم كيفية استغلال حاويات البيانات لتسجيل وتوثيق حالات الكائنات لإنشاء أنظمة قادرة على استعادة البيانات عند الأخطاء.
-* **إضافات المترجم المتقدمة (Compiler Extensions):** التعامل مع الكلمات المفتاحية الأصلية للمترجم مثل `__declspec` لإنشاء خصائص ذكية تحاكي اللغات البرمجية الحديثة.
 * **التفاعل البرمجي التبادلي:** إتقان آلية نقل وتداول البيانات بين حاويتين مستقلتين لإدارة الحالات الزمنية للمتغيرات.
 
 ---
