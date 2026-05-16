@@ -28,9 +28,9 @@ The system adapts and optimizes the underlying doubly linked list methods to enf
 
 ## 💻 Code Architecture
 
-Responsibilities within this **Functional System** demonstrate pure object-oriented architecture and inheritance principles:
+Responsibilities within this **Functional System** demonstrate pure object-oriented architecture, strategic inheritance, and functional polymorphism:
 
-* **The Inheritance Layer (`public clsMyQueue<T>`):** Instead of rewriting container logic, the stack reuses the protected capabilities of the queue layout.
+* **The Inheritance Layer & Structural Logic (`public clsMyQueue<T>`):** Fundamentally, a Stack is conceptually very similar to a Queue as they share almost identical behavioral characteristics, with the definitive difference being that a Queue enforces **FIFO** (First-In, First-Out) while a Stack enforces **LIFO** (Last-In, First-Out). To elegantly resolve this, we utilized **Inheritance** instead of Composition. By inheriting the entire Queue infrastructure and performing a clean method **Override** on the `push(T Item)` function, we completely eliminated code duplication. This architectural choice represents the optimal engineering solution for this layout.
 * **The Explicit Context Pointer (`this->`):** Employing `this->` ensures strict template bound resolution during compile-time, acting as a clean code convention for dependent member access in generic programming.
 
 ---
@@ -55,7 +55,7 @@ Developing this system ensures a deep understanding of several advanced programm
 
 # بناء مكدس مخصص عن طريق التوريث وقوالب تعدد الأشكال
 
-هذا المشروع يمثل تطبيقاً هندسياً متقدماً لبناء هيكل بيانات المكدس (Stack) من الصفر، وهو يندرج تحت تصنيف **Functional Systems** حيث تم تصميمه عن طريق تطبيق مبدأ التوريث من نظام الطابور (Queue) المبني سابقاً، لاستعراض الكفاءة العالية في إعادة استخدام الكود، والتحكم في المؤشرات الديناميكية عبر الكلمة المفتاحية `this`.
+هذا المشروع يمثل تطبيقاً هندسياً متقادماً لبناء هيكل بيانات المكدس (Stack) من الصفر، وهو يندرج تحت تصنيف **Functional Systems** حيث تم تصميمه عن طريق تطبيق مبدأ التوريث من نظام الطابور (Queue) المبني سابقاً، لاستعراض الكفاءة العالية في إعادة استخدام الكود، والتحكم في المؤشرات الديناميكية عبر الكلمة المفتاحية `this`.
 
 تم تطوير هذا النظام التعليمي المتقدم تحت إشراف وتوجيه المهندس القدير: **محمد أبو هدهود** عبر [Programming Advices](https://programmingadvices.com/courses/enrolled/2001432).
 
@@ -85,7 +85,7 @@ Developing this system ensures a deep understanding of several advanced programm
 
 تم تقسيم وتوزيع المسؤوليات داخل هذا الـ **Functional System** بالاعتماد على التوريث الصريح وفصل النطاقات:
 
-* **طبقة التوريث العام (`public clsMyQueue<T>`):** بدلاً من إعادة كتابة منطق الحاويات، يعتمد المكدس على الخصائص المحمية المتوفرة في الطابور لإعادة تدوير الهيكل البرمجي بالكامل.
+* **طبقة التوريث والمنطق الهيكلي (`public clsMyQueue<T>`):** من الناحية الهندسة البرمجية، المكدس (Stack) يتشابه تماماً مع الطابور (Queue) في الخصائص والوظائف الداخلية، ولكن الفارق الجوهري الوحيد يكمن في أن الطابور يطبق مبدأ **FIFO** (الداخل أولاً يخرج أولاً) بينما المكدس يطبق مبدأ **LIFO** (الداخل أخيراً يخرج أولاً). بناءً على ذلك، قمنا هنا بتطبيق مبدأ **التوريث (Inheritance)** بدلاً من الكومبيزشن (Composition)؛ حيث ورثنا بنية الطابور بالكامل وقمنا بعمل **Override** مخصص لدالة الإضافة `push(T Item)` لتغير سلوك الإدخال، وذلك لتجنب تكرار الكود والدوال المشتركة (مثل الحجم، الفحص، والتنظيف)، وهذا هو الحل الهندسي الأمثل والأكثر كفاءة لتصميم هذا النظام.
 * **الربط الصريح للمؤشر السلوكي (`this->`):** يضمن استخدام `this->` توجيه الكومبيلر وفك الارتباط المبهم للمتغيرات والدوال الموروثة داخل القوالب الجينيريك، مما يرفع من جودة ونظافة التصميم الهيكلي.
 
 ---
