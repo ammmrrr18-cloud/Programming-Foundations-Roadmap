@@ -1,5 +1,7 @@
 # Pizza Restaurant Order Management System
 
+[📑 اضغط هنا للانتقال إلى النسخة العربية](#نظام-إدارة-طلبات-مطعم-البيتزا)
+
 This project is the first simple application I have built using Windows Forms graphical user interfaces. The system does not aim to be a massive or complex system, but rather a humble first step and a simple software simulation that mimics how functional systems operate in real-world restaurants in a smooth and direct manner. Its primary goal is to apply programming concepts and build a strong foundation in interactive interface design.
 
 ---
@@ -48,7 +50,7 @@ Based on the software design of the project, the system is divided into a collec
 ---
 🚀 This system was developed as part of a software development journey and building advanced functional systems!
 
-================================================================================
+---
 
 # نظام إدارة طلبات مطعم البيتزا
 
