@@ -1,6 +1,6 @@
 # Pizza Restaurant Order Management System
 
-[📑 اضغط هنا للانتقال إلى النسخة العربية](#نظام-إدارة-طلبات-مطعم-البيتزا)
+[📑 Click here to go to the Arabic version / اضغط هنا للانتقال إلى النسخة العربية](#نظام-إدارة-طلبات-مطعم-البيتزا)
 
 This project is the first simple application I have built using Windows Forms graphical user interfaces. The system does not aim to be a massive or complex system, but rather a humble first step and a simple software simulation that mimics how functional systems operate in real-world restaurants in a smooth and direct manner. Its primary goal is to apply programming concepts and build a strong foundation in interactive interface design.
 
@@ -28,6 +28,17 @@ This project is the first simple application I have built using Windows Forms gr
 
 <img width="1653" height="866" alt="Screenshot 2026-06-26 071328" src="https://github.com/user-attachments/assets/4e8c6204-5e98-4043-93ba-dc3e4029b5f0" />
 
+---
+
+## Graphical User Interface (GUI) Controls Used
+
+To build an interactive and responsive user experience, various standard controls were utilized across the system's screens:
+* **RadioButtons:** Used to enforce single-choice selections such as pizza sizes (Small, Medium, Large) and crust types (Thin, Thick).
+* **CheckBoxes:** Used for multi-selection options, specifically allowing users to add multiple custom pizza toppings.
+* **Buttons:** Used to trigger actions, navigate between functional screens, confirm final orders, and reset input data.
+* **Labels:** Used to display descriptive text, static information, dynamic total prices, and receipt summary calculations.
+* **GroupBoxes:** Used to logically separate and visually categorize distinct sets of options on the forms.
+* **PictureBoxes:** Used to render background images, decorative design components, and custom restaurant branding elements.
 
 ---
 
@@ -71,7 +82,7 @@ Based on the software design of the project, the system is divided into a collec
 
 <img width="1802" height="816" alt="Screenshot 2026-06-26 064059" src="https://github.com/user-attachments/assets/93d1bc9a-c219-40f5-8e53-9b9707f4f0ba" />
 
-* **قائمة الأسعار المحدثة (صفحة فرعية تتفرع من شاشة قائمة الطعام والأحجام):** شاشة مخصصة لعرض الأسعار بوضوح لضمان الشفافية مع العميل ومساعدته في حساب تكلفة الحجم قبل الاختيار.
+* **قائمة الأسعار المحدثة (صفحة فرعية تتفرع من شاشة قائمة الطعام والأحجام):** شاشة مخصصة لعرض الأسعار بوضائح لضمان الشفافية مع العميل ومساعدته في حساب تكلفة الحجم قبل الاختيار.
 
 * **شاشة الإضافات المخصصة (صفحة فرعية تفتح بعد تحديد قائمة الطعام):** تتيح تحديد المكونات الإضافية وحساب تكاليفها بشكل تلقائي وفوري، وبعد الانتهاء منها يتم الانتقال مباشرة إلى شاشة الفاتورة والملخص النهائي.
 
@@ -82,6 +93,19 @@ Based on the software design of the project, the system is divided into a collec
 <img width="1669" height="890" alt="Screenshot 2026-06-26 064151" src="https://github.com/user-attachments/assets/871ccdde-4d70-4915-a7af-38b7ebb4e6d3" />
 
 <img width="1653" height="866" alt="Screenshot 2026-06-26 071328" src="https://github.com/user-attachments/assets/4e8c6204-5e98-4043-93ba-dc3e4029b5f0" />
+
+---
+
+## أدوات واجهة المستخدم الرسومية المستخدمة
+
+لبناء تجربة مستخدم تفاعلية وسلسة، تم استخدام مجموعة متنوعة من الأدوات القياسية عبر شاشات النظام:
+* **RadioButtons (أزرار الخيار الواحد):** لفرض اختيار خيار واحد فقط مثل أحجام البيتزا (صغيرة، متوسطة، كبيرة) وأنواع العجائن (رقيقة، سميكة).
+* **CheckBoxes (صناديق الاختيار المتعدد):** للخيارات التي تحتمل أكثر من إجابة، وتم استخدامها للسماح للمستخدم باختيار مكونات وإضافات البيتزا المتنوعة.
+* **Buttons (الأزرار):** لتنفيذ الأوامر والانتقال بين الواجهات الوظيفية وتأكيد الطلب النهائي وتصفير البيانات.
+* **Labels (النصوص التوضيحية):** لعرض العناوين، البيانات الثابتة، والأسعار الإجمالية المتغيرة وملخص الحسابات.
+* **GroupBoxes (صناديق المجموعات):** لفصل وتنظيم الخيارات المختلفة بصرياً ومنطقياً داخل الواجهة.
+* **PictureBoxes (صناديق الصور):** لعرض صور الخلفيات، والعناصر التصميمية الجمالية، والشعار الخاص بالمطعم.
+
 ---
 
 ## هيكلية الشاشات والملفات داخل النظام
