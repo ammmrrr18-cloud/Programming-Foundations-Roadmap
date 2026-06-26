@@ -26,6 +26,9 @@ This project is the first simple application I have built using Windows Forms gr
 
 <img width="1669" height="890" alt="Screenshot 2026-06-26 064151" src="https://github.com/user-attachments/assets/871ccdde-4d70-4915-a7af-38b7ebb4e6d3" />
 
+<img width="1653" height="866" alt="Screenshot 2026-06-26 071328" src="https://github.com/user-attachments/assets/4e8c6204-5e98-4043-93ba-dc3e4029b5f0" />
+
+
 ---
 
 ## Screen and File Hierarchy Within the System
@@ -78,6 +81,7 @@ Based on the software design of the project, the system is divided into a collec
 
 <img width="1669" height="890" alt="Screenshot 2026-06-26 064151" src="https://github.com/user-attachments/assets/871ccdde-4d70-4915-a7af-38b7ebb4e6d3" />
 
+<img width="1653" height="866" alt="Screenshot 2026-06-26 071328" src="https://github.com/user-attachments/assets/4e8c6204-5e98-4043-93ba-dc3e4029b5f0" />
 ---
 
 ## هيكلية الشاشات والملفات داخل النظام
