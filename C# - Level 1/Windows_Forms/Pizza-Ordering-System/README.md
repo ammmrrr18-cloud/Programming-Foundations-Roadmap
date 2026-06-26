@@ -30,15 +30,17 @@ This project is the first simple application I have built using Windows Forms gr
 
 ---
 
-## Graphical User Interface (GUI) Controls Used
+## Graphical User Interface (GUI) Controls and Properties Used
 
-To build an interactive and responsive user experience, various standard controls were utilized across the system's screens:
+To build an interactive, responsive, and user-friendly experience, various standard controls and advanced property management techniques were utilized across the system's screens:
 * **RadioButtons:** Used to enforce single-choice selections such as pizza sizes (Small, Medium, Large) and crust types (Thin, Thick).
 * **CheckBoxes:** Used for multi-selection options, specifically allowing users to add multiple custom pizza toppings.
 * **Buttons:** Used to trigger actions, navigate between functional screens, confirm final orders, and reset input data.
 * **Labels:** Used to display descriptive text, static information, dynamic total prices, and receipt summary calculations.
 * **GroupBoxes:** Used to logically separate and visually categorize distinct sets of options on the forms.
 * **PictureBoxes:** Used to render background images, decorative design components, and custom restaurant branding elements.
+* **Tag Property:** Effectively leveraged to store underlying financial values (such as specific item/topping costs) directly within individual UI components, enabling clean object-oriented data retrieval during dynamic receipt calculation.
+* **TabStop & TabIndex Properties:** Carefully configured across all focusable controls to guarantee smooth, professional keyboard navigation via the `Tab` key, ensuring a structured and intuitive user flow.
 
 ---
 
@@ -82,7 +84,7 @@ Based on the software design of the project, the system is divided into a collec
 
 <img width="1802" height="816" alt="Screenshot 2026-06-26 064059" src="https://github.com/user-attachments/assets/93d1bc9a-c219-40f5-8e53-9b9707f4f0ba" />
 
-* **قائمة الأسعار المحدثة (صفحة فرعية تتفرع من شاشة قائمة الطعام والأحجام):** شاشة مخصصة لعرض الأسعار بوضائح لضمان الشفافية مع العميل ومساعدته في حساب تكلفة الحجم قبل الاختيار.
+* **قائمة الأسعار المحدثة (صفحة فرعية تتفرع من شاشة قائمة الطعام والأحجام):** شاشة مخصصة لعرض الأسعار بوضوح لضمان الشفافية مع العميل ومساعدته في حساب تكلفة الحجم قبل الاختيار.
 
 * **شاشة الإضافات المخصصة (صفحة فرعية تفتح بعد تحديد قائمة الطعام):** تتيح تحديد المكونات الإضافية وحساب تكاليفها بشكل تلقائي وفوري، وبعد الانتهاء منها يتم الانتقال مباشرة إلى شاشة الفاتورة والملخص النهائي.
 
@@ -96,15 +98,17 @@ Based on the software design of the project, the system is divided into a collec
 
 ---
 
-## أدوات واجهة المستخدم الرسومية المستخدمة
+## أدوات وخصائص واجهة المستخدم الرسومية المستخدمة
 
-لبناء تجربة مستخدم تفاعلية وسلسة، تم استخدام مجموعة متنوعة من الأدوات القياسية عبر شاشات النظام:
+لبناء تجربة مستخدم تفاعلية، متجاوبة، وسهلة الاستخدام، تم استخدام مجموعة متنوعة من الأدوات القياسية والتقنيات البرمجية المتقدمة عبر شاشات النظام:
 * **RadioButtons (أزرار الخيار الواحد):** لفرض اختيار خيار واحد فقط مثل أحجام البيتزا (صغيرة، متوسطة، كبيرة) وأنواع العجائن (رقيقة، سميكة).
 * **CheckBoxes (صناديق الاختيار المتعدد):** للخيارات التي تحتمل أكثر من إجابة، وتم استخدامها للسماح للمستخدم باختيار مكونات وإضافات البيتزا المتنوعة.
 * **Buttons (الأزرار):** لتنفيذ الأوامر والانتقال بين الواجهات الوظيفية وتأكيد الطلب النهائي وتصفير البيانات.
 * **Labels (النصوص التوضيحية):** لعرض العناوين، البيانات الثابتة، والأسعار الإجمالية المتغيرة وملخص الحسابات.
 * **GroupBoxes (صناديق المجموعات):** لفصل وتنظيم الخيارات المختلفة بصرياً ومنطقياً داخل الواجهة.
 * **PictureBoxes (صناديق الصور):** لعرض صور الخلفيات، والعناصر التصميمية الجمالية، والشعار الخاص بالمطعم.
+* **خاصية Tag البرمجية:** تم استغلالها بذكاء واحترافية لتخزين القيم المالية والأسعار الخاصة بكل حجم أو إضافة داخل الأداة الرسومية نفسها، مما يسهل استدعاء البيانات وحساب إجمالي الفاتورة ديناميكياً بأسلوب برمجي نظيف.
+* **خاصيتي TabStop و TabIndex:** تم إعدادهما بعناية فائقة لترتيب وضمان سلاسة حركة التنقل بين جميع عناصر الواجهة والأزرار باستخدام زر الـ `Tab` من لوحة المفاتيح، مما يمنح تجربة مستخدم منظمة كأنظمة المطاعم الحقيقية.
 
 ---
 
