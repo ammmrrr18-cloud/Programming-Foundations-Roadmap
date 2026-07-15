@@ -31,6 +31,9 @@
 
 ---
 
+<img width="1218" height="767" alt="Screenshot 2026-07-15 114025" src="https://github.com/user-attachments/assets/baf1c200-e3ab-4b88-8c20-2a5a385c7cda" />
+
+
 ## 👤 صفحة بيانات المريض (Patient Information)
 
 يقوم المستخدم بإدخال:
@@ -55,6 +58,12 @@
 - عرض رسالة توضح سبب الخطأ للمستخدم.
 
 ---
+<img width="1296" height="890" alt="Screenshot 2026-07-15 114231" src="https://github.com/user-attachments/assets/9ba52721-2178-4e24-bf44-ab737753743c" />
+
+
+
+
+
 
 ## 📅 صفحة حجز الموعد (Appointment)
 
@@ -78,6 +87,7 @@
 - فتح الموقع الإلكتروني للعيادة عند الضغط على رابط الموقع.
 
 ---
+<img width="1593" height="889" alt="Screenshot 2026-07-15 114358" src="https://github.com/user-attachments/assets/93c3833a-66fe-45f3-acaf-f08d3e2e4b78" />
 
 # 📚 الكنترولات المستخدمة
 
