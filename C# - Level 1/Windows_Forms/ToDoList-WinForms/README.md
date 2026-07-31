@@ -1,3 +1,88 @@
+# To Do List Project
+
+## Project Overview
+
+This is a simple desktop application developed using **C#** and **Windows Forms**. The project is designed to help users organize their daily tasks by creating **Categories** and adding **Tasks** under each category.
+
+The project was built as a practice application to improve Windows Forms development skills, organize code into reusable methods, and apply programming fundamentals in a real desktop application.
+
+---
+
+## Project Features
+
+- Create new categories.
+- Add tasks to any category.
+- Rename categories or tasks.
+- Delete a selected category or task.
+- Delete all tasks after confirmation.
+- Mark all tasks as completed.
+- Uncheck all completed tasks.
+- Automatically calculate the completion percentage.
+- Display the total number of tasks and the number of completed tasks.
+- Show the completion progress using a ProgressBar.
+- Display desktop notifications using NotifyIcon.
+- Validate user input before performing any operation.
+- Show warning and guidance messages whenever necessary.
+
+---
+
+## Controls Used
+
+- TreeView
+- ProgressBar
+- NotifyIcon
+- MessageBox
+- Label
+- TextBox
+- Button
+
+---
+
+## Skills Applied
+
+- Working with TreeView and managing TreeNodes.
+- Organizing code into reusable methods.
+- Input validation.
+- Using DialogResult for confirmation dialogs.
+- Calculating task completion percentage.
+- Displaying desktop notifications using NotifyIcon.
+- Writing clean, organized, and maintainable code.
+
+---
+
+## How to Run
+
+1. Open the project using Visual Studio.
+2. Run the application.
+3. Create a new category.
+4. Select the desired category.
+5. Add tasks to the selected category.
+6. Check tasks as you complete them and monitor your progress.
+
+---
+
+## Programming Language
+
+- C#
+
+## Framework
+
+- Windows Forms (.NET Framework)
+
+---
+
+## Developer
+
+This project was developed for learning and practicing desktop application development using **C#** and **Windows Forms**.
+
+
+
+
+
+
+
+
+
 # مشروع قائمة المهام (To Do List)
 
 ## نبذة عن المشروع
